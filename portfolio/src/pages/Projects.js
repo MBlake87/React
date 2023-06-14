@@ -1,28 +1,11 @@
 
 import { React } from "react";
-import { enableBodyScroll } from "body-scroll-lock";
 import yelpcamp from "../images/yelp-camp.png"
 import portfolio from "../images/portfolio.png"
 import { Link } from "react-router-dom";
 
 export function Projects() {
-    enableBodyScroll(document)
-    // const handleWindowSizeChange = () => {
-    //     if (window.screen.width < 768) {
-    //         enableBodyScroll(document)
-    //     } else {
-    //         disableBodyScroll(document)
-    //     }
-    // }
 
-    // // // useEffect(() => {
-    // // //     window.addEventListener('resize', handleWindowSizeChange);
-    // // //     if (window.screen.width > 768) { disableBodyScroll(document) } else { enableBodyScroll(document) }
-    // // //     return () => {
-
-    // // //         window.removeEventListener('resize', handleWindowSizeChange);
-    // // //     }
-    // // }, []);
     return (
         <div className="bg-gradient-to-b from-gray-700 via-gray-900 to-black min-w-[100vw] min-h-[100vh] flex flex-col " >
             <h1 className="text-white text-[1rem] xl:text-[4rem] font-Roboto text-center mt-10 pb-[5rem]">Please take some time to view my work......updated regularly</h1>

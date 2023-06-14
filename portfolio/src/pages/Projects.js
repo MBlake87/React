@@ -1,6 +1,6 @@
 
-import { React, useEffect } from "react";
-import { enableBodyScroll, disableBodyScroll } from "body-scroll-lock";
+import { React } from "react";
+import { enableBodyScroll } from "body-scroll-lock";
 import yelpcamp from "../images/yelp-camp.png"
 import portfolio from "../images/portfolio.png"
 import { Link } from "react-router-dom";

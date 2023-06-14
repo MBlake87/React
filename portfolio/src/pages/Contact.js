@@ -7,7 +7,6 @@ import {
     AlertIcon,
     AlertTitle,
     AlertDescription,
-    Button,
     CloseButton,
 } from '@chakra-ui/react'
 import { enableBodyScroll, disableBodyScroll } from "body-scroll-lock";

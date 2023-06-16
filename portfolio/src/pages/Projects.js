@@ -1,13 +1,20 @@
 
-import { React } from "react";
+import { React, useEffect } from "react";
 import yelpcamp from "../images/yelp-camp.png"
 import portfolio from "../images/portfolio.png"
 import { Link } from "react-router-dom";
+import { enableBodyScroll } from "body-scroll-lock";
+import { Helmet } from "react-helmet";
 
 export function Projects() {
 
+    useEffect(() => {
+        enableBodyScroll(document)
+    })
+
     return (
-        <div className="bg-gradient-to-b from-gray-700 via-gray-900 to-black min-w-[100vw] min-h-[100vh] flex flex-col " >
+        <div className="bg-gradient-to-b from-gray-700 via-gray-900 to-black max-w-[100vw] min-h-[100vh] flex flex-col " >
+            <Helmet><title>Mark Blake | Projects</title></Helmet>
             <h1 className="text-white text-[1rem] xl:text-[4rem] font-Roboto text-center mt-10 pb-[5rem]">Please take some time to view my work......updated regularly</h1>
             <div className="flex flex-col  xl:flex-row xl:m-auto  items-center xl:w-[75%] pb-[3rem]"><Link to="/"><img className=" px-3 xl:pr-10 xl:max-w-[40rem] hover:-translate-y-2 hover:scale-110 duration-300 cursor-pointer" src={portfolio} alt="yelp-camp" /></Link>
                 <p className="font-Roboto text-[0.75rem] text-center pt-10 xl:pt-0 xl:text-[1.5rem] w-[100%] text-white">

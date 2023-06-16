@@ -18,7 +18,7 @@ export function Nav() {
                 <img className="h-12 pl-3" src={logo} alt="logo" />
                 <p className='font-Roboto tracking-[.5rem] ml-2 text-[2rem] font-semibold hover:text-[#93b7be] duration-500 md:hover:tracking-[1.5rem]'>Mark Blake</p>
             </div>
-            <div className={`bg-gray-700 w-[100%] md:flex md:items-center ${(click ? "hidden" : "flex")}`}>
+            <div className={`bg-gray-700 w-[100%] md:flex md:items-center ${(click ? "flex" : "hidden")}`}>
                 <ul className='flex w-[100%] text-[#c7ccdb] flex-col md:flex md:flex-row md:justify-end border-b'>
                     <li className="py-5 md:px-5 text-center text-[1.3rem] hover:text-[#93b7be] duration-500 hover:underline">
                         <Link onClick={handleClick} to="/">Home</Link>

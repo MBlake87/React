@@ -1,4 +1,3 @@
-import React from 'react'
 import logo from "../images/abstract-shape.png"
 import { useState } from 'react'
 import { FaBars, FaTimes } from "react-icons/fa"
@@ -6,8 +5,8 @@ import { Link } from "react-scroll"
 
 
 export function Nav() {
+    const [click, setClick] = useState(true)
 
-    const [click, setClick] = useState(false)
 
     const handleClick = () => {
         setClick(!click)

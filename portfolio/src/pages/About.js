@@ -8,14 +8,14 @@ import tailwindIcon from "../images/tailwind-css-icon.png"
 import bootstrapIcon from "../images/bootstrap.png"
 import gitIcon from "../images/github-mark-white.png"
 import nodeIcon from "../images/nodejs-icon.svg"
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 
 
 export function About() {
     return (
         <>
 
-            <div id="about" className="grid grid-cols-8 items-center gap-4 px-2 xl:w-[50vw] xl:gap-12 xl:mx-auto xl:pt-[4rem]">
+            <div id="about" className="grid grid-cols-8 items-center gap-4 px-2 xl:w-[50vw] xl:gap-12 xl:mx-auto xl:pt-[4rem] border-b-2 pb-5">
                 <div><img className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer xl:max-h-[150px] " src={html} alt="html icon"></img></div>
                 <div><img className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer xl:max-h-[150px]" src={cssIcon} alt="css icon"></img></div>
                 <div><img className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer xl:max-h-[150px]" src={javascriptIcon} alt="javascript icon"></img></div>
@@ -25,17 +25,16 @@ export function About() {
                 <div><Link to="https://github.com/MBlake87"><img className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer xl:max-h-[150px]" src={gitIcon} alt="github icon"></img></Link></div>
                 <div><img className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer xl:max-h-[150px]" src={nodeIcon} alt="node icon"></img></div>
             </div>
-            <div className="w-full text-white text-center pt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima explicabo exercitationem illo nisi, quaerat nesciunt laudantium pariatur possimus amet aliquam, dolorem provident eius temporibus consequatur aut ab molestias voluptas optio.
-                Neque fugiat ipsam porro eveniet quasi, harum iste totam architecto eligendi numquam illo quo, natus, a asperiores maxime odio eos nulla accusantium ex itaque voluptatum fuga voluptates cum. Fugit, magnam?
-                Quisquam dicta voluptate maiores esse. Consequuntur, quidem corrupti. Ipsam in sint aut doloribus a delectus hic distinctio ea reprehenderit assumenda quisquam adipisci eaque cum nesciunt, fuga enim officia nostrum iste!
-                Deserunt eos quaerat numquam quas expedita eius eaque error incidunt pariatur voluptatibus saepe blanditiis laboriosam nulla sint ut vel molestias totam impedit ex eum dolorum, autem neque? Dolores, quos suscipit!
-                Tempora eum veniam nisi. Tempore vel unde voluptate ipsum dicta aperiam voluptas minima illum quos dolore est sint soluta quaerat magni optio eaque doloribus cum, nemo ducimus repellendus assumenda? Aliquam.
-                Praesentium soluta iste earum reiciendis, expedita dolor accusantium, cumque aspernatur magnam ducimus accusamus nisi. Deserunt, quod quaerat, possimus corporis, natus quas mollitia fugiat eligendi labore culpa libero aspernatur voluptatum dolor?
-                Provident magni veniam facere impedit expedita aliquid ut, nam, harum cupiditate nulla dolore tempora. Quisquam, asperiores. Ad, non qui sint, temporibus tempore voluptatem excepturi deserunt iure fuga cum repellendus saepe!
-                Reprehenderit similique quod sit, placeat quidem facilis quo eligendi provident molestias? Magnam tempora non beatae corrupti necessitatibus consequuntur ratione nam. Voluptatem magni quas, saepe ducimus possimus laboriosam eos placeat eum.
-                Dolore nulla sapiente nostrum excepturi minus. Ullam eligendi quasi dignissimos dicta enim, doloribus illum eveniet facere iste, aut ab accusantium aliquam nesciunt nemo delectus in assumenda porro. Consequatur, tenetur vero.
-                Voluptatem minus nam recusandae nemo ea numquam neque veniam, aliquid dignissimos inventore labore, perspiciatis similique eum nesciunt velit architecto veritatis quidem sunt repellat obcaecati impedit? Ea, reprehenderit quidem. Nulla, doloribus!</div>
-
+            <div className="w-full flex flex-col items-center xl:items-stretch xl:flex-row xl:justify-around text-white text-center my-[2rem] xl:my-[4rem]  py-2 xl:py-[8rem] border-b-2">
+                <div className="w-[95%] xl:w-[40%] bg-slate-700 rounded-lg my-5"><h2 className="text-[1.5rem] xl:text-[3rem] text-left p-5 mb-1 xl:mb-5">My development journey...</h2>
+                    <p className="text-left text-[.75rem] xl:text-[1.25rem] p-5">I am a self taught FrontEnd Developer, focusing on React and passionate about UX/UI.  </p>
+                    <p className="text-left text-[.75rem]xl:text-[1.25rem] p-5">I have always been interested by computers and coding but it wasnt until I delved into the world of Web Development that I really found my passion.
+                        I started an online bootcamp and never looked back! After completing my first course, I started creating projects and found that I really enjoyed using React.</p>
+                    <p className="text-left text-[.75rem] xl:text-[1.25rem] p-5">I am now looking for that next adventure in my development journey. Lets work together, contact me below</p>
+                    <Link to="contact" smooth={true} className="cursor-pointer text-[1.25rem] xl:text-[2rem] border rounded-md px-3 hover:bg-white hover:text-slate-700">Contact Me</Link></div>
+                <div className="w-[95%] xl:w-[40%] my-5 bg-[#44535e] rounded-lg"><h2 className="text-[1.5rem] xl:text-[3rem] text-left p-5 mb-5">About Me...</h2>
+                    <p className="text-left px-5 xl:text-[1.25rem]text-[.75rem] pb-5" >I have spent the last 20 years in retail, 10 of those being in management. Over the years I have really focussed my style of management into customer experience and people management. This experience has given me a real appreciation for working as a team to deliver the requirements of the customer and ensure their experience is second to none!</p></div>
+            </div>
 
         </>
     )

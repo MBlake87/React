@@ -56,7 +56,7 @@ function App() {
   }
 
   return (
-    <div className="bg-[#FF0303] w-[100vw] min-h-[100vw]">
+    <div className="bg-[#FF0303] w-[100vw] min-h-screen">
       {loading ? <h1 className="text-[4rem]">Loading....</h1> : (
         <>
           <Banner />
@@ -68,6 +68,10 @@ function App() {
             {pokemon.map((pokemon, i) => {
               return <PokeCard key={i} pokemon={pokemon} />
             })}
+          </div>
+          <div className="flex justify-around my-10 pb-10">
+            <button className="xl:text-[1.5rem] min-w-[100px] bg-yellow-400 px-5 border-black border-2 py-3 rounded-full hover:underline" onClick={prev}>Previous</button>
+            <button className="xl:text-[1.5rem] min-w-[100px] bg-yellow-400 px-5 py-3 border-black border-2 rounded-full hover:underline" onClick={next}>Next</button>
           </div>
         </>
       )}

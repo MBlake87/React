@@ -8,14 +8,18 @@ export function Projects() {
     <>
       <h1
         id="projects"
-        className=" py-[5rem] text-center text-[1rem] uppercase leading-10 tracking-[1rem] text-text underline underline-offset-8 xl:text-[2rem] xl:tracking-[4rem]"
+        className=" pb-[5rem] text-center text-[1rem] uppercase leading-10 tracking-[1rem] text-text xl:text-[2rem] xl:tracking-[3rem]"
       >
         My Current Projects
       </h1>
       <div className="flex flex-col justify-center gap-5 xl:flex-row">
         <div class="mx-5 rounded-lg border border-gray-200 bg-white shadow dark:border-gray-700 dark:bg-gray-800 xl:max-w-[30%]">
           <a href="/">
-            <img class="h-[360px] w-full rounded-t-lg" src={portfolio} alt="" />
+            <img
+              class="aspect-auto w-full rounded-t-lg xl:h-[360px]"
+              src={portfolio}
+              alt=""
+            />
           </a>
           <div class="p-5">
             <a href="/">
@@ -53,7 +57,11 @@ export function Projects() {
 
         <div class="mx-5 rounded-lg border border-gray-200 bg-white shadow dark:border-gray-700 dark:bg-gray-800 xl:max-w-[30%]">
           <a href="https://yelp-camp-3ia4.onrender.com/">
-            <img class="h-[360px] w-full rounded-t-lg" src={yelpcamp} alt="" />
+            <img
+              class="aspect-auto w-full rounded-t-lg xl:h-[360px]"
+              src={yelpcamp}
+              alt=""
+            />
           </a>
           <div class="p-5">
             <a href="https://yelp-camp-3ia4.onrender.com/">
@@ -92,7 +100,11 @@ export function Projects() {
         </div>
         <div class="mx-5 rounded-lg border border-gray-200 bg-white shadow dark:border-gray-700 dark:bg-gray-800 xl:max-w-[30%]">
           <a href="https://marks-pokedex-api.netlify.app/">
-            <img class="h-[360px] w-full rounded-t-lg" src={pokedex} alt="" />
+            <img
+              class="aspect-auto w-full rounded-t-lg xl:h-[360px]"
+              src={pokedex}
+              alt=""
+            />
           </a>
           <div class="p-5">
             <a href="https://marks-pokedex-api.netlify.app/">

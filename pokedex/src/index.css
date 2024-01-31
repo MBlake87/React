@@ -3,5 +3,10 @@
 @tailwind utilities;
 
 body {
-    height: 100vh;
+  height: 100vh;
+}
+
+@font-face {
+  font-family: "PocketMonk";
+  src: local("PocketMonk"), url(./PocketMonk-15ze.ttf) format("ttf");
 }

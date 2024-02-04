@@ -21,8 +21,9 @@ export async function getEachPokemon(url) {
 }
 
 export async function getSearchPokemon(url, query) {
+  const newQuery = query.toLowerCase();
   return new Promise((res, rej) => {
-    fetch(`${url}/${query}`)
+    fetch(`${url}/${newQuery}`)
       .then((res) => {
         if (!res.ok) throw new Error();
         return res.json();
